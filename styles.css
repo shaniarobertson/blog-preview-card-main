@@ -1,50 +1,53 @@
 body {background-color: hsl(47, 88%, 63%); 
-  color: hsl(0, 0%, 7%);
+    color: hsl(0, 0%, 7%);
+  
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 
-  font-family: "Figtree", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap:20px;
+    gap: 1.25em;
+    margin: 0 auto;
+    width: 57em;
 }
 
 .container {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
+    border-radius: 1.25em;
     border: 1px solid black;
-    padding: 16px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 1);
-    width: 338px;
+    padding: 1em;
+    
+    box-shadow: .5em .5em rgba(0, 0, 0, 1);
+    width: 35%;
 }
 
 img {
     border-radius: 10px;
-    width: fit-content;
-}
-
-p {
-    font-size: 14px;
+    width: 100%; 
+    height: auto;
 }
 
 #tag {
     background-color:hsl(47, 88%, 63%);
-    border-radius: 4px;
-    font-weight: 700;
+    border-radius: .25em;
+    font-weight: 800;
+    font-size: .875em;
     width: fit-content;
-    padding: 4px 12px;
+    padding: .25em .75em;
 }
 
 #publishDate {
-    font-weight: 400;
+    font-weight: 500;
+    font-size: .875em;
 }
 
 #heading {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 800;
     margin: 0;
 }
@@ -54,20 +57,21 @@ p {
 }
 
 #description {
-    font-size: 16px;
     color: hsl(0, 0%, 42%);
 }
 
-#greg {
-    height: 32px;
-}
 
 .author {
     font-weight: 800;
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: .75em;
     align-items: center;
+    font-size: .875em;
+}
+
+#author-img {
+    width: 10%;
 }
 
 .attribution { font-size: 11px; }
